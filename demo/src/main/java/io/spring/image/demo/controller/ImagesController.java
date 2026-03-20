@@ -21,8 +21,8 @@ public class ImagesController {
     //*
 
     @PostMapping
-    public ResponseEntity uploadImage(@RequestParam("file")  MultipartFile file,
-                                      @RequestParam("name")String name,
+    public ResponseEntity uploadImage(@RequestParam("file") MultipartFile file,
+                                      @RequestParam("name") String name,
                                       @RequestParam("tags") List<String> tags
     ) {
         log.info("Recebendo tentativa de upload do arquivo: {}", file.getOriginalFilename());
