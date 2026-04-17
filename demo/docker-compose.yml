@@ -1,7 +1,7 @@
 
 services:
   db:
-    image: postgres
+    image: postgres:17-alpine
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -17,9 +17,9 @@ services:
     image: dpage/pgadmin4
     restart: always
     environment:
-      PGADMIN_DEFAULT_PASSWORD: admin
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+        PGADMIN_DEFAULT_PASSWORD: admin
+        PGADMIN_DEFAULT_EMAIL: admin@admin.com
     ports:
-      - '15413:80'
+        - '15413:80'
     depends_on:
-      - db
+        - db
