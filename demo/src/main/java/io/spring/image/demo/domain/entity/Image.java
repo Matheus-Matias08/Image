@@ -34,8 +34,13 @@ public class Image {
     private LocalDateTime uploadDate;
     @Column
     private String tags;
-    @Column(name="file", columnDefinition ="LONGBLOB")
+
+    @Column(name = "file",
+            columnDefinition="LONGBLOB")
     @Lob
     private byte[] file;
-}
 
+    public String getFileName(){
+        return getName().concat(".").concat(getExtension().name());
+    }
+}
