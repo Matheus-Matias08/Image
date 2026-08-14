@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <main>
-        <PrimeiroComponente />
+        <PrimeiroComponente mensagem="Esta é uma mensagem passada como propriedade para o PrimeiroComponente." />
       </main>
     </div>
   )
