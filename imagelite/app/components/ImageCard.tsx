@@ -15,5 +15,9 @@ export  const ImageCard: React.FC<ImageCardProps> = ({imageName, imageUrl, image
     <p className="text-xl font-semibold mb-2 text-gray-600">{uploadDate}</p>
   </div>
 </div>
+    
+    
+
   )
-}   
+
+}

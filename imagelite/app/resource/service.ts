@@ -1,12 +1,16 @@
 import { Image } from "./image";
 
-class ImageService {
-    baseURL: string ='http://localhost:8080/images';    
+// Reexporta a interface Image para ser usada em outras partes do app
+export type { Image };
 
-    async buscas(): Promise<Image[]> {
-        const response = await fetch(this.baseURL);
-        return response.json();
-        }
-    }
+export class ImageService {
+  baseURL: string = 'http://localhost:8080/images';
 
-    export const useImage = () => new ImageService();
+  async buscar(): Promise<Image[]> {
+    const response = await fetch(this.baseURL);
+    return await response.json();
+  }
+}
+
+// Custom Hook para instanciar o serviço
+export const useImageService = () => new ImageService();
