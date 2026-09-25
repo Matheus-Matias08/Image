@@ -13,8 +13,7 @@ export const PrimeiroComponente = ({ mensagem, mesagemBotao }: PrimeiroComponent
   // }
 
   const clique = () => {
-    console.log('Você clicou no botão!');
-    alert(mesagemBotao); 
+    
   }
   
   return(
