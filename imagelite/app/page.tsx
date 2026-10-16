@@ -7,7 +7,6 @@ export default function Home() {
       <div className="flex min-h-[calc(100vh-130px)] w-full items-center justify-center bg-gray-50 px-4 py-12">
         <main className="w-full max-w-md rounded-2xl bg-white p-6 md:p-8 shadow-md border border-gray-100 flex flex-col items-center text-center space-y-6">
           
-          {/* Cabeçalho */}
           <div className="space-y-1">
             <h1 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
               Gerenciador de Imagens
